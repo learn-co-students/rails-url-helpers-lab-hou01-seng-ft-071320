@@ -55,7 +55,7 @@ describe 'Activate page' do
   before do
     @student = Student.create!(first_name: "Daenerys", last_name: "Targaryen")
   end
-
+  
   it "Should mark an inactive student as active" do
     visit activate_student_path(@student)
     @student.reload
