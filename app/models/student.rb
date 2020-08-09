@@ -3,11 +3,4 @@ class Student < ActiveRecord::Base
     self.first_name + " " + self.last_name
   end
 
-  def toggle_active
-    if self.active == true
-      self.update({active: false})
-    else
-      self.update({active: true})
-    end
-  end
 end
