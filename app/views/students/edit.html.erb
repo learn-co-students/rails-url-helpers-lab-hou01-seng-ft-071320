@@ -1,0 +1,3 @@
+<%student = Student.find(params[:id])%>
+<%student.toggle_active%>
+<% controller.redirect_to student_path(student) %>
