@@ -1,0 +1,5 @@
+<%= form_for @student do |student| %>
+
+<%= student.label :active %>
+<%= student.check_box :known, {}, "false", "true" %>
+<% end %>
